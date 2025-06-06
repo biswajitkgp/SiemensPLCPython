@@ -11,4 +11,6 @@ Repository to read inputs and write outputs on S7 1200 PLC using Python codes. U
 6. Paste snap7.dll to C:\Windows\System32
 7. Next find out the path to the snap7 folder
 ![image](https://github.com/user-attachments/assets/c7b37094-5346-497c-8cdc-4efa6edfc23c)
+8. Edit client.py file. Replace line 378 {if area not in Area:} with {if not isinstance(area, int):} and Replace line 388 {f"reading area: {area.name} db_number: {db_number} start: {start} amount: {size} "} with {f"reading area: {area} db_number: {db_number} start: {start} amount: {size} "}
+9. Alternatively, you can replace the client.py file with the client.py file under the Replacement File directory
 
